@@ -17,10 +17,14 @@ func main() {
 
 	if err != nil {
 		log.Fatalf("Failed to connect:%v\n", err)
-	}
+	} 
 
 	defer conn.Close()
+
 	c := pb.NewGreetServiceClient(conn)
 
-	doGreet(c)
+	// doGreet(c)
+	// doGreetManyTimes(c)
+	doLongGreet(c)
+
 }
