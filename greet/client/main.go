@@ -17,7 +17,7 @@ func main() {
 
 	if err != nil {
 		log.Fatalf("Failed to connect:%v\n", err)
-	} 
+	}
 
 	defer conn.Close()
 
@@ -25,6 +25,7 @@ func main() {
 
 	// doGreet(c)
 	// doGreetManyTimes(c)
-	doLongGreet(c)
+	// doLongGreet(c)
+	doGreetEveryone(c)
 
 }

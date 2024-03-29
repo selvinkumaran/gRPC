@@ -28,7 +28,9 @@ func main() {
 
 	pb.RegisterGreetServiceServer(s, &Server{})
 
-	if err = s.Serve(lis); err != nil {
+	err = s.Serve(lis)
+
+	if err != nil {
 		log.Fatalf("Failed to server %v\n", err)
 	}
 }

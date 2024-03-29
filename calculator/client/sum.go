@@ -10,10 +10,12 @@ import (
 func doSum(c pb.CalculatorServiceClient) {
 	log.Println("dosun was invoked")
 
-	res, err := c.Sum(context.Background(), &pb.SumRequest{
+	req := &pb.SumRequest{
 		FirstNumber:  12,
 		SecondNumber: 1,
-	})
+	}
+	
+	res, err := c.Sum(context.Background(), req)
 
 	if err != nil {
 		log.Fatalf("could not sum:%v", err)
