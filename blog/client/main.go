@@ -25,4 +25,14 @@ func main() {
 
 	createBlog(c)
 
+	// readBlog(c, "6606f836e7e4a0f7e0435af2") //valid
+	// readBlog(c, "6606f87ecdf3d7b7b7bc678e") //valid
+	// readBlog(c, "notId")                    //invalid
+
+	// updateBlog(c, "6606f87ecdf3d7b7b7bc678e")
+	// updateBlog(c, "6606f87ecdf3d7b7b7bc678ssqwdwe")
+
+	// listBlogs(c)
+
+	// deleteBlog(c, "6606f836e7e4a0f7e0435af2")
 }

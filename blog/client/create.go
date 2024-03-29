@@ -12,9 +12,9 @@ func createBlog(c pb.BlogServiceClient) string {
 	log.Println("CreateBlog was invoked")
 
 	blog := &pb.Blog{
-		AuthorId: "selvin",
-		Title:    "My Forst Blog",
-		Content:  "Content of first blog",
+		AuthorId: "check",
+		Title:    "My new Blog",
+		Content:  "Content of check blog",
 	}
 
 	res, err := c.CreateBlog(context.Background(), blog)
